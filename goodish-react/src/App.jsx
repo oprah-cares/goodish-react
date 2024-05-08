@@ -24,16 +24,12 @@ const App = () => {
   return (
     <Router>
           <NavBar />
+          <Home />
           <div>
           <Routes>
-            <Route
-              path="/settings"
-            />
-            <Route
-              path="/register"
-            />
-            <Route path="/login" />
-            <Route path="/" element={<Home />} />
+            <Route path="/register" component={RegisterUser} />
+            <Route path="/login" component={Login} />
+            <Route path="/" component={<Home />} />
           </Routes>
         </div>
     </Router>

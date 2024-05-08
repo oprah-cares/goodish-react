@@ -12,7 +12,6 @@ const NavBar = () => {
   return (
     <div className={`${styles.topnav} ${responsive ? styles.responsive : ''}`}>
       <Link to="/">Home</Link>
-      <Link to="/settings">Settings</Link>
       <Link to="/register">Sign Up</Link>
       <Link to="/login">Login</Link>
       <a href="javascript:void(0);" className={styles.icon} onClick={handleToggle}>

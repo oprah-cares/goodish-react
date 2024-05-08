@@ -8,21 +8,6 @@ body {
   font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
-.default {
-  background-color: #E6E8ED;
-  color: #303336;
-}
-
-.dark {
-  background-color: #303336;
-  color: #E6E8ED;
-}
-
-.light {
-  background-color: #f0f0f0;
-  color: #303336;
-}
-
 .dropdown {
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -39,18 +24,6 @@ body {
 .topnav {
     overflow: hidden;
     background-color: #60B9EB;
-  }
-
-  .dark .topnav {
-    overflow: hidden;
-    background-color: inherit;
-    color: inherit;
-  }
-
-  .light .topnav {
-    overflow: hidden;
-    background-color: #60B9EB;
-    color: inherit;
   }
   
   .topnav a {
