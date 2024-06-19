@@ -1,11 +1,10 @@
 import React from 'react';
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home';
+import SideNav from './components/SideNav';
 import RegisterUser from './components/RegisterUser/RegisterUser';
 import Login from './components/Login';
-import styles from './components/styles.module.css'
 
 const App = () => {
   const [loggedInUser,setLoggedInUser] = useState("");
@@ -23,13 +22,13 @@ const App = () => {
   
   return (
     <Router>
-          <NavBar />
+        <SideNav />
           <Home />
           <div>
           <Routes>
             <Route path="/register" component={RegisterUser} />
             <Route path="/login" component={Login} />
-            <Route path="/" component={<Home />} />
+            <Route path="/" component={Home} />
           </Routes>
         </div>
     </Router>
